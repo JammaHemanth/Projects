@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+	   <div class="row">
+	   <div class="col-sm-6">
+	    <form class="border border-primary border-rounded p-3" action="saveMedicine">
+		<h3 class="bg-primary text-white p-3">Add New Medicine</h3>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mid" id="mid" placeholder="Medicine Id"/>
+			<label for="mid">Medicine Id</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mname" id="mname" placeholder="Medicine Name"/>
+			<label for="mname">Medicine Name</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mcompany" id="mcompany" placeholder="Company Name"/>
+			<label for="mcompany">Company Name</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mpurpose" id="mpurpose" placeholder="Purpose"/>
+			<label for="mpurpose">Purpose</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mdosage" id="mdosage" placeholder="Dosage"/>
+			<label for="mdosage">Dosage</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mtype" id="mtype" placeholder="Medicine Type"/>
+			<label for="mtype">Medicine Type</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" type="date" name="mdom" id="mdom" placeholder="Date of Manufacturing"/>
+			<label for="mdom">Date of Manufacturing</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input type="date" class="form-control" name="mdoe" id="mdoe" placeholder="Date of Expiry"/>
+			<label for="mdoe">Date of Expiry</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input type="number" class="form-control" name="mppu" id="mppu" placeholder="Price Per Unit"/>
+			<label for="mppu">Price Per Unit</label>
+		</div>
+		<div class="form-floating mb-3">
+			<input class="form-control" name="mdesc" id="mdesc" placeholder="Drug Description"/>
+			<label for="mdesc">Drug Description</label>
+		</div>
+		<div class="mb-3 text-end">
+			<button class="btn btn-primary" type="submit" role="submit">Add Medicine</button>
+		</div>
+		</form>
+		</div>
+		<div class="col-sm-6">
+			
+		</div>
+		</div>
+	</div>
+</body>
+</html>
