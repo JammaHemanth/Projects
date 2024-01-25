@@ -1,0 +1,254 @@
+<html>
+      <head>
+<!-- CSS only -->
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<style>
+.btn{
+text-align: center;
+}
+
+.header{
+width:100%;
+height:9%;
+background-color:Purple;
+color:white;
+}
+
+.content{
+width:100%;
+height:81%;
+overflow:scroll;
+}
+
+.footer{
+width:100%;
+height:10%;
+background-color:RebeccaPurple;
+color:white;
+}
+
+.img-fluid{
+width:50%;
+height:50%;
+}
+
+.justify{
+text-align:justify;
+}
+
+.img{
+width:50%;
+height:50%;
+background-position:right;
+}
+
+.box{
+border:1px solid;
+height:30%;
+width:30%;
+position:relative;
+background-position:right;
+}
+
+.anim1{
+animation-name:square;
+animation-duration:10s;
+animation-delay:0s;
+animation-direction:alternate;
+animation-iteration-count:infinite;
+}
+@keyframes square{
+from{ top:0px;left:80px;background-image:url('https://www.dynodesoft.com/images/dynode.jpg')background-size:cover}
+to{ top:0px;left:120px;background-image:url('https://www.dynodesoft.com/images/dynode.jpg');background-size:cover}
+}
+
+
+</style>
+      </head>
+   <body>
+
+
+<!--Borders and title-->
+<div class="container">
+
+<form class="w-30 m-5 border border-primary rounded p-3" action="rules.html">
+
+<div class="mb-3">
+<h3 class="bg-primary text-light border rounded-top" align="center">Registration Form</h3>
+</div>
+
+<div class=" mb-3 mt-3">
+<div class="row">
+<div class="col">
+<label class="form-name">First Name</label>
+<input type="text" class="form-control" name="name" placeholder="Enter your First Name" required>
+</div>
+<div class="col">
+<label class="form-name">Last Name</label>
+<input type="text" class="form-control" name="name" placeholder="Enter your Last Name" required>
+</div>
+</div>
+</div>
+
+<div class="mb-3 mt-3">
+<div class="row">
+<div class="col">
+<label class="form-name">E-mail</label>
+<input type="text" class="form-control" name="e-mail" placeholder="Enter your E-mail" required>
+</div>
+<div class="col">
+<label for="job" class="form-label">Job Roles</label>
+   
+<select class="form-select">
+
+      <optgroup label="Job roles"></option>
+      <option>Analyst - Data Science</option> 
+      <option>Associate Business Analyst</option> 
+      <option>Associate Consultant</option> 
+      <option>Associate Finance</option>
+      <option>Business Development Associate</option> 
+      <option>Designer – Experience Design</option>  
+      <option>Lead - Experience Design</option> 
+      <option>Senior Designer – Experience Design</option> 
+      <option>Senior Lead - Experience Design</option> 
+      <option>Systems Engineer</option> 
+      <option>Senior Systems Engineer</option> 
+      <option>Java developer</option>
+      <option>Web developer</option>
+      <option>Front-end developer</option>
+      <option>Back-end developer</option>
+    </select>
+</div>
+</div>
+</div>
+
+<label for="Address">Address</label>
+<textarea class="form-control" rows="2" id="Address" name="text" placeholder="Enter your Address" required></textarea>
+
+<div class=" form-floating mb-3 mt-3">
+<div class="row">
+<div class="col">
+<label class="form-name">City</label>
+
+<select class="form-select">
+
+      <optgroup label="City"></option>
+      <option>Andhra Pradesh</option> 
+      <option>Ahmedabad and Gandhinagar</option> 
+      <option>Bangalore</option> 
+      <option>Chennai</option>
+      <option>Hyderabad</option> 
+      <option>Kolkata</option>  
+      <option>Mumbai</option> 
+      <option>NCR – Delhi Noida and Gurgaon</option> 
+      <option>Pune </option> 
+    </select>
+
+</div>
+<div class=" col">
+<label class="form-name">Pin-code</label>
+<input type="number" class="form-control" name="name" placeholder="Enter your Pin-code">
+</div>
+</div>
+</div>
+
+<div class="mb-3 mt-3">
+<div class="row">
+<div class=" col">
+<label class="form-name">D.O.B</label>
+<input type="datetime-local" class="form-control" name="name" placeholder="Enter your City">
+</div>
+<div class=" col">
+<label class="form-name">Phone number</label>
+<input type="number" class="form-control" name="name" placeholder="Enter your Phone number" required>
+</div>
+</div>
+</div>
+
+<div class="mb-5 mt-5">
+<label>Gender</label> &nbsp
+<label>Male</label>
+<input type="radio" class="form-check-input"  name="gender"> &nbsp
+<label >Female</label>
+<input type="radio" class="form-check-input" name="gender"> &nbsp
+<label>Others</label>
+<input type="radio" class="form-check-input" name="gender"> 
+</div>
+
+<div class="mb-5 mt-5">
+<label>Hobbies</label> &nbsp
+<label>Reading</label>
+<input type="checkbox" class="form-check-input"  name="hobbies"> &nbsp
+<label >Travel</label>
+<input type="checkbox" class="form-check-input" name="hobbies"> &nbsp
+<label>Designing</label>
+<input type="checkbox" class="form-check-input" name="hobbies"> 
+</div>
+
+
+<div class="mb-3 mt-3">
+<div class="row">
+<div class="col">
+<label>Qualifiaction:</label>
+<select>
+<option value="Enter Your Qualifiacion">Enter Your Qualifiacion</option>
+<optgroup label ="B.Tech"></option>
+<option value="Mechanical">Mechanical</option>
+<option value="C.S.E">C.S.E</option>
+<option value="E.E.E">E.E.E</option>
+<option value="E.C.E">E.C.E</option>
+<option value="Civil">Civil</option>
+</select>
+</div>
+<div class="col">
+<label class="form-name">G.P.A/Percentage</label>
+<input type="number" class="form-control" required>
+</div>
+</div>
+</div>
+
+<div class="mb-3 mt-3">
+<label >Update your Resume</label> &nbsp
+<input type="file" name="file">
+</div>
+
+<br> 
+
+<div class="mb-3 mt-3">
+<label >Update your passport photo</label> &nbsp
+<input type="file" name="file">
+</div>
+
+<div class="mb-5 mt-5" w-50>
+<label>Coding Skills</label> &nbsp
+<input type="range" name="range">
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+<label class="form-check-label" for="myCheck">I agree to the terms and conditions</label>
+
+
+</div>
+
+<div class="float-end">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+<div class="text-end">
+<button type="reset" class="btn btn-dark">Reset</button> &nbsp &nbsp 
+</div>
+</div>
+</div>
+</form>
+
+           
+
+
+</body>
+</html>
