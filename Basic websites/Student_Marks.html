@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Students Marks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<style>
+	form{
+		border: 3px solid white;
+		border-radius: 10px;
+		margin-top: 2%;
+		padding: 5px;
+		width: 40%;
+	}
+	div{
+	    border: 3px solid white;
+		border-radius: 10px;
+		margin-top: 10px;
+		padding: 20px;
+		width: 40%;	
+	}
+	body{
+		background-image:url('https://www.crushpixel.com/big-static14/preview4/basic-math-equations-formulas-white-1809345.jpg');
+		-webkit-backdrop-filter:blur(5.5px);
+                backdrop-filter:blur(4.0px);
+                color: white;
+                background-repeat:no-repeat;
+                background-size:cover;
+                bckground-position:center;
+                background-attachment:fixed;
+	}
+	</style>
+	<script>
+		function operation1(marks){
+			a = parseInt(document.getElementById("eng").value);
+			if(a>100){
+				alert("Please enter in range 100")
+			}
+			data = marks;
+			document.getElementById("result").innerHTML="English Marks: "+data+"<br>";
+			document.getElementById("result6").innerHTML="Total Marks : "+data;
+			data = a/6;
+			document.getElementById("result7").innerHTML="Average: "+data;
+		}
+		function operation2(marks1){
+			b = parseInt(document.getElementById("hin").value);
+			if(b>100){
+				alert("Please enter in range 100")
+			}
+			data2 = marks1;
+			document.getElementById("result1").innerHTML="Hindi Marks: "+data2+"<br>";
+			data2 = a+b;
+			document.getElementById("result6").innerHTML="Total Marks : "+data2;
+			data2 = (a+b)/6;
+			document.getElementById("result7").innerHTML="Average: "+data2;
+		}
+		function operation3(marks2){
+			c = parseInt(document.getElementById("math").value);
+			if(c>100){
+				alert("Please enter in range 100")
+			}
+			data3 = marks2;
+			document.getElementById("result2").innerHTML="Maths Marks: "+data3+"<br>";
+			data3 = a+b+c;
+			document.getElementById("result6").innerHTML="Total Marks : "+data3;
+			data3 = (a+b+c)/6;
+			document.getElementById("result7").innerHTML="Average: "+data3;
+		}
+		function operation4(marks3){
+			d = parseInt(document.getElementById("Phy").value);
+			if(d>100){
+				alert("Please enter in range 100")
+			}
+			data4 = marks3;
+			document.getElementById("result3").innerHTML="Physics Marks: "+data4+"<br>";
+			data4 = a+b+c+d;
+			document.getElementById("result6").innerHTML="Total Marks : "+data4;
+			data4 = (a+b+c+d)/6;
+			document.getElementById("result7").innerHTML="Average: "+data4;
+		}
+		function operation5(marks4){
+			e = parseInt(document.getElementById("chem").value);
+			if(e>100){
+				alert("Please enter in range 100")
+			}
+			data5 = marks4;
+			document.getElementById("result4").innerHTML="Chemistry Marks: "+data5+"<br>";
+			data5 = a+b+c+d+e;
+			document.getElementById("result6").innerHTML="Total Marks : "+data5;
+			data5 = (a+b+c+d+e)/6;
+			document.getElementById("result7").innerHTML="Average: "+data5;
+		}
+		function operation6(marks5){
+			f = parseInt(document.getElementById("com").value);
+			if(f>100){
+				alert("Please enter in range 100")
+			}
+			data6 = marks5;
+			document.getElementById("result5").innerHTML="Computer Marks: "+data6+"<br>";
+			data6 = a+b+c+d+e+f;
+			document.getElementById("result6").innerHTML="Total Marks : "+data6;
+			data6 = (a+b+c+d+e+f)/6;
+			document.getElementById("result7").innerHTML="Average: "+data6;+ "Percentage Aggregate"
+		}
+		</script>
+</head>
+<body> <center>
+<h1><u> Students Marks Calculations </u></h1>
+<form>
+	<label class="form-name"> English Marks: </label>
+	<input type = "number" id = "eng" onkeyup="operation1(this.value)"/><br><br
+	<label class="form-name"> Hindi Marks: </label>
+	<input type = "number" id = "hin" onkeyup="operation2(this.value)"/><br><br
+	<label class="form-name"> Math Marks: </label>
+	<input type = "number" id = "math" onkeyup="operation3(this.value)"/><br><br
+	<label class="form-name"> Physics Marks: </label>
+	<input type = "number" id = "Phy" onkeyup="operation4(this.value)"/><br><br
+	<label class="form-name"> Chemistry Marks: </label>
+	<input type = "number" id = "chem" onkeyup="operation5(this.value)"/><br><br
+	<label class="form-name"> Computers Marks: </label>
+	<input type = "number" id = "com" onkeyup="operation6(this.value)"/><br><br
+</form>
+
+<div id = "result">
+</div>
+
+<div id = "result1">
+</div>
+
+<div id = "result2">
+</div>
+
+<div id = "result3">
+</div>
+
+<div id = "result4">
+</div>
+
+<div id = "result5">
+</div>
+
+<div id = "result6">
+</div>
+
+<div id = "result7">
+</div> </center>
+</body>
+</html>
