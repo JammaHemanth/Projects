@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+                    <title>Javascript interview questions</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<title>Interview Preparation</title>
+<style>
+	.sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: lightslategrey;
+          overflow-x: hidden;
+          padding-top: 20px;
+     }
+     .sidenav a {
+		 font-family: calibri;
+         padding: 6px 8px 6px 16px;
+         text-decoration: none;
+         font-size: 25px;
+         color: black;
+         display: block;
+      }
+      
+      .sidenav a:hover {
+                 color: #f1f1f1;
+        }
+        
+       .main{
+		   padding-left: 12%;
+	   }
+	   p{
+		   font-size: 20px;
+	   } 
+
+      li{
+         font-size: 20px;
+      }
+
+      u{
+         color: green;
+      }
+
+	</style>
+</head>
+<body>
+	<font face="Comic Sans MS">
+<h1 align="center"><u> Interview Preparation </u></h1>
+    </font>>
+    <div class = "sidenav">
+   <a href="cloud.html">Cloud computing</a>
+	<a href="html.html">Html</a>
+	<a href="Javascript.html">Javascipt</a>
+	<a href="Java.html">Java</a>
+   <a href="python.html">Python</a>
+	<a href="sql.html">SQL</a>
+	<a href="Testing.html">Testing</a>
+   <a href="ETL.html">ETL</a>
+	<a href="PowerBi.html">Power BI</a>
+    </div> <hr>
+<div class="main">
+<p>
+
+	                 <p>1.What is Javascipt <br>
+                       JavaScript is a high-level, interpreted programming language primarily used for adding interactivity to web pages.
+                    </p>
+                    
+                    <p>2.What are the data types in Javascipt <br>
+                       JavaScript has six primitive data types: string, number, boolean, null, undefined, and symbol, along with a complex data type called object.
+                    </p>
+                    
+                    <p>3.What are the differences between Java and JavaScript? <br>
+                     JavaScript is a client-side scripting language and Java is object Oriented Programming language. Both of them are totally different from each other.
+                     <ul>
+                        <li>
+                           <u>JavaScript: </u> It is a light-weighted programming language (“scripting language”) for developing interactive web pages. It can insert dynamic text into the HTML elements. JavaScript is also known as the browser’s language. <br>
+                        </li>
+                        <li>
+                           <u>Java: </u>Java is one of the most popular programming languages. It is an object-oriented programming language and has a virtual machine platform that allows you to create compiled programs that run on nearly every platform. Java promised, “Write Once, Run Anywhere”.
+                        </li>
+                       </ul>
+                    </p>
+                    
+                    <p>4.Which symbol is used for comments in JavaScript?<br>
+                     Comments prevent the execution of statements. Comments are ignored while the compiler executes the code. There are two type of symbols to represent comments in JavaScript:
+                     <ul>
+                        <li>
+                           <u>Double slash: </u> "// comment" It is known as a single-line comment.
+                        </li>
+                        <li>
+                           <u>single slash: </u> "/* Multi-line comment */" It is known as a multi-line comment.
+                        </li>
+                     </ul>
+                    </p>
+                    
+                    <p>5.What is the difference between null and undefined?<br>
+                      null represents the intentional absence of any object value, while undefined indicates the absence of a value or an uninitialized variable.
+                    </p>
+                                         
+                    <p>6.What is the difference between == and === in JavaScript? <br>
+                     The == operator checks for equality after performing type coercion, while the === operator checks for equality without type coercion, ensuring both the value and type match.
+                    </p>
+
+                    <p>7.What would be the result of 3+2+”7″?<br>
+                     Here, 3 and 2 behave like an integer, and “7” behaves like a string. So 3 plus 2 will be 5. Then the output will be 5+”7″ = 57. 
+                    </p>
+
+                    <p>8.What is the use of the isNaN function?<br>
+                     The number isNan function determines whether the passed value is NaN (Not a number) and is of the type “Number”. In JavaScript, the value NaN is considered a type of number. It returns true if the argument is not a number, else it returns false.
+                    </p>
+
+                    <p>9.What do you mean by NULL in JavaScript?<br>
+                     The NULL value represents that no value or no object. It is known as empty value/object.
+                    </p>
+
+                    <p>10.What is the difference between ViewState and SessionState?<br>
+                       <ul>
+                        <li>
+                           <u>ViewState:</u> It is specific to a single page in a session.
+                        </li>
+                        <li>
+                           <u>Sessionstate:</u> It is user specific that can access all the data on the web pages.
+                        </li>
+                       </ul>
+                    </p>
+
+                    <p>11.What are all the looping structures in JavaScript ?<br>
+                       <ul>
+                        <li>
+                           <u>While loop :</u> A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+                        </li>
+                        <li>
+                           <u>for loop :</u> A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+                        </li>
+                        <li>
+                           <u>Do while :</u> A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+                        </li>
+                       </ul>
+                    </p>
+
+                    <p>12.What is the difference between an alert box and a confirmation box?<br>
+                     An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
+                    </p>
+
+                    <p>13.How to get the status of a CheckBox?<br>
+                     The DOM Input Checkbox Property is used to set or return the checked status of a checkbox field. This property is used to reflect the HTML Checked attribute.If the CheckBox is checked then it returns True.
+                     <br/><p>document.getElementById("GFG").checked;</p>
+                    </p>
+
+                    <p>14.What is the difference between call() and apply() methods ?<br>
+                     Both methods are used in a different situation
+                     <ul>
+                        <li>
+                           <u>call() Method:</u> It calls the method, taking the owner object as argument. The keyword this refers to the ‘owner’ of the function or the object it belongs to. We can call a method that can be used on different objects.
+                        </li>
+                        <li>
+                           <u>apply() Method:</u> The apply() method is used to write methods, which can be used on different objects. It is different from the function call() because it takes arguments as an array.
+                        </li>
+                     </ul>
+                     </p>
+
+                     <p>15. What is the difference between innerHTML & innerText? <br>
+                        The innerText property sets or returns the text content as plain text of the specified node, and all its descendants whereas the innerHTML property sets or returns the plain text or HTML contents in the elements. Unlike innerText, inner HTML lets you work with HTML rich text and doesn’t automatically encode and decode text.
+                     </p>
+
+                     <p>16. Write the errors shown in JavaScript?<br>
+                        <ul>
+                           <li>
+                              <u>Syntax error:</u> A syntax error is an error in the syntax of a sequence of characters or tokens that are intended to be written in a particular programming language.
+                           </li>
+                           <li>
+                              <u>Logical error:</u>  It is the most difficult error to be traced as it is the error on the logical part of the coding or logical error is a bug in a program that causes to operate incorrectly and terminate abnormally.
+                           </li>
+                           <li>
+                              <u>Runtime error:</u> A runtime error is an error that occurs during the running of the program, also known as an exception.
+                           </li>
+                        </ul>
+                      </p>
+
+                     <p>17.What does var myArray = [[]]; statement declares? <br>
+                        In JavaScript, this statement is used to declare a two-dimensional array.
+                      </p>
+
+                     <p>18. How many ways an HTML element can be accessed in JavaScript code? <br>
+                        There are four possible ways to access HTML elements in JavaScript which are:
+                        <ul>
+                           <li>
+                              <u>getElementById() Method: </u> It is used to get the element by its id name.
+                           </li>
+                           <li>
+                              <u>getElementsByClass() Method: </u> It is used to get all the elements that have the given classname.
+                           </li>
+                           <li>
+                              <u>getElementsByTagName() Method: </u> It is used to get all the elements that have the given tag name.
+                           </li>
+                           <li>
+                              <u>querySelector() Method: </u> This function takes CSS style selector and returns the first selected element.
+                           </li>
+                        </ul>
+                      </p>
+
+                     <p>19. What is the use of the blur function?<br>
+                        It is used to remove focus from the selected element. This method starts the blur event or it can be attached to a function to run when a blur event occurs.
+                      </p>
+
+                     <p>20.What is javascript Hoisting? <br>
+                        When any interpreter runs the code then all the variables are re-hoisted to the top of the original scope. This method is applicable for declaration not for the initialization of a variable. This is known as a javascript Hoisting.
+                      </p>
+
+                     <p>21.What are JavaScript modules?<br>
+                        JavaScript modules are reusable pieces of code that encapsulate related functionality. They allow for better organization, encapsulation, and code reuse in larger JavaScript applications.
+                     </p>
+
+                     <p>22.What is object destructuring in JavaScript?<br>
+                        Object destructuring is a feature that allows extracting properties from objects and assigning them to variables. It provides a concise way to extract values and work with object properties.
+                     </p>
+
+                     <p>23.What are JavaScript classes?<br>
+                        JavaScript classes are a way to define objects with shared properties and behaviors. They provide a template for creating multiple instances of objects with similar characteristics.
+                     </p>
+
+                     <p>24.What is inheritance in JavaScript?<br>
+                        Inheritance is a mechanism in JavaScript where an object can inherit properties and methods from another object. It allows for code reuse and creating hierarchical relationships between objects.
+                     </p>
+
+                     <p>25.What are JavaScript getters and setters?<br>
+                        Getters and setters are special methods used to get and set the values of object properties, respectively. They provide control over property access and enable data validation and encapsulation.
+                     </p>
+
+                     <p>26.What is the purpose of the try/catch statement in JavaScript?<br>
+                        The try/catch statement is used for error handling in JavaScript. It allows catching and handling exceptions that occur during the execution of a block of code.
+                     </p>
+
+                     <p>27.What is the purpose of the forEach() function in JavaScript?<br>
+                        The forEach() function is used to execute a provided function once for each element in an array. It provides an easy way to iterate over array elements and perform operations on them.
+                     </p>
+
+                     <p>28.What is the purpose of the setTimeout() function in JavaScript?<br>
+                        The setTimeout() function is used to schedule the execution of a function after a specified delay in milliseconds. It allows adding time-based delays to JavaScript code.
+                     </p>
+
+                     <p>29.What is the purpose of the fetch() function in JavaScript?<br>
+                        The fetch() function is used to make HTTP requests and fetch resources from the network. It provides a modern and flexible way to perform asynchronous network requests.
+                     </p>
+
+                     <p>30.What is the purpose of the Object.keys() function in JavaScript?<br>
+                        The Object.keys() function is used to extract all the keys of an object and return them as an array. It provides an easy way to iterate over an object's properties.
+                     </p>
+
+                     <p>31.What is the purpose of the addEventListener() method in JavaScript?<br>
+                        The addEventListener() method is used to attach an event listener to an element. It allows you to listen for specific events and execute a function when the event is triggered.
+                     </p>
+
+                     <p>32.What is the purpose of the querySelector() method in JavaScript?<br>
+                        The querySelector() method is used to select the first element that matches a specified CSS selector. It provides a powerful way to retrieve elements from the DOM based on CSS selectors.
+                     </p>
+
+                     <p>33.What is the purpose of the querySelectorAll() method in JavaScript?<br>
+                        The querySelectorAll() method is used to select all elements that match a specified CSS selector. It returns a collection of elements that can be iterated over or accessed using indexing.
+                     </p>
+
+                     <p>34.What is the difference between querySelector() and getElementById()?<br>
+                        querySelector() is a more versatile method that allows selecting elements based on any CSS selector, while getElementById() is specifically used to select an element by its unique id attribute.
+                     </p>
+
+                     <p>35.What is the purpose of the bind() method in JavaScript?<br>
+                        The bind() method is used to create a new function with a specified this value and initial arguments. It allows explicit binding of the this value within a function.
+                     </p>
+
+                     <p>36.What is the purpose of the call() method in JavaScript?<br>
+                        The call() method is used to invoke a function with a specified this value and arguments provided individually. It allows borrowing methods from other objects and explicit invocation of functions.
+                     </p>
+
+                     <p>37.What is the purpose of the apply() method in JavaScript?<br>
+                        The apply() method is used to invoke a function with a specified this value and arguments provided as an array or an array-like object. It allows borrowing methods from other objects and explicit invocation of functions.
+                     </p>
+
+                     <p>38.What is the purpose of the Array.isArray() method in JavaScript?<br>
+                        The Array.isArray() method is used to determine whether a given value is an array or not. It returns true if the value is an array, and false otherwise.
+                     </p>
+
+                     <p>39.What is the purpose of the startsWith() method in JavaScript?<br>
+                        The startsWith() method is used to check if a string starts with a specified substring. It returns true if the string starts with the substring, and false otherwise.
+                     </p>
+
+                     <p>40.What is the purpose of the endsWith() method in JavaScript?<br>
+                        The endsWith() method is used to check if a string ends with a specified substring. It returns true if the string ends with the substring, and false otherwise.
+                     </p>
+
+                     <p>41.What is the purpose of the includes() method in JavaScript?<br>
+                        The includes() method is used to check if a string contains a specified substring. It returns true if the substring is found, and false otherwise.
+                     </p>
+
+                     <p>42.What is the purpose of the padStart() method in JavaScript?<br>
+                        The padStart() method is used to pad the beginning of a string with a specified character until it reaches a desired length. It is often used for formatting purposes.
+                     </p>
+
+                     <p>43.What is the purpose of the padEnd() method in JavaScript?<br>
+                        The padEnd() method is used to pad the end of a string with a specified character until it reaches a desired length. It is often used for formatting purposes.
+                     </p>
+
+                     <p>44.What is the purpose of the charAt() method in JavaScript?<br>
+                        The charAt() method is used to retrieve the character at a specified index in a string. It returns the character at the specified index or an empty string if the index is out of range.
+                     </p>
+
+                     <p>45.What is the purpose of the charCodeAt() method in JavaScript?<br>
+                        The charCodeAt() method is used to retrieve the Unicode value of the character at a specified index in a string. It returns the Unicode value of the character or NaN if the index is out of range.
+                     </p>
+
+                     <p>46.What is the purpose of the String.fromCharCode() method in JavaScript?<br>
+                        The String.fromCharCode() method is used to create a string from a sequence of Unicode values. It allows converting Unicode values to their corresponding characters.
+                     </p>
+
+                     <p>47.What is the purpose of the encodeURIComponent() function in JavaScript?<br>
+                        The encodeURIComponent() function is used to encode special characters in a URL component. It ensures that the component can be included in a URL without causing any parsing errors.
+                     </p>
+
+                     <p>48.What is the purpose of the decodeURIComponent() function in JavaScript?<br>
+                        The decodeURIComponent() function is used to decode URL-encoded components. It converts URL-encoded characters back to their original form.
+                     </p>
+
+
+
+</p>	 
+</div>
+</body>
+</html>

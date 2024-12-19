@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+                    <title>ETL testing interview questions</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<title>Interview Preparation</title>
+<style>
+	.sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: lightslategrey;
+          overflow-x: hidden;
+          padding-top: 20px;
+     }
+     .sidenav a {
+		 font-family: calibri;
+         padding: 6px 8px 6px 16px;
+         text-decoration: none;
+         font-size: 25px;
+         color: black;
+         display: block;
+      }
+      
+      .sidenav a:hover {
+                 color: #f1f1f1;
+        }
+        
+       .main{
+		   padding-left: 12%;
+	   }
+	   p{
+		   font-size: 20px;
+	   } 
+
+	   li{
+         font-size: 20px;
+          }
+
+      u{
+         color: green;
+      }
+
+
+	</style>
+</head>
+<body>
+	<font face="Comic Sans MS">
+<h1 align="center"><u> Interview Preparation </u></h1>
+    </font>>
+    <div class = "sidenav">
+    <a href="cloud.html">Cloud computing</a>
+	<a href="html.html">Html</a>
+	<a href="Javascript.html">Javascipt</a>
+	<a href="Java.html">Java</a>
+    <a href="python.html">Python</a>
+	<a href="sql.html">SQL</a>
+	<a href="Testing.html">Testing</a>
+    <a href="ETL.html">ETL</a>
+	<a href="PowerBi.html">Power BI</a>
+    </div> <hr>
+<div class="main">
+	                <p> 1. What is Extract? <br>
+	                 It extracts the data from external source amd move it to the data warehouse pre-processor database.
+                    </p>
+                    
+                    <p> 2. What is Transformation? <br>
+                     It transforms data task allows point to point generating,modifying and transforming the data.                  
+                    </p>
+
+                    <p> 3. What is Loading? <br>
+                     In this task, the data is added to the database table in a warehouse.                   
+                    </p>
+                    
+                    <p> 4. What is 3-Layer architecture? <br>
+                     i)<u>Staging Layer: </u> It is used to store the data which is extracted from the different data source system. <br>
+                     ii)<u>Data Integration: </u> It transforms data from the staging layer and move the data to the database. 
+                     The combination of fact and dimension table in a data warehouse system is called schema.
+                     In this database, tha data is arranged into hierarchical group which is called dimension. <br>
+                     iii)<u>Access layer: </u> It is used to the end users to retrieve data for analytical reporting.
+                    </p>
+
+                    <p> 5. What is Bussiness intelligence? <br>
+                     It is the process for collecting raw bussiness data and transforming it into a meaning full vision that is more useful for bussiness.                   
+                    </p>
+
+                    <p> 6. What is datamart? <br>
+                     It is simple form of datawarehouse, and it focussed on a single functional area and it gets only for few sources.                   
+                    </p>
+
+                    <p> 7. What is partioning? <br>
+                     Transactions are always nedded to be divided for better perfomance and the same process are known as partioning.                    
+                    </p>
+
+                    <p> 8. What is pipeline? <br>
+                     It refers to the set of process to extract the data from one system, transfom it and load it into some database or data warehouse.                   
+                    </p>
+
+                    <p> 9. What is Mapping> <br>
+                     It contains all the necessary information from the source file and store the details row and columns.
+                     Mapping sheet helps in writing the sql queries to speed up the testing process.
+                    </p>
+
+                    <p>10. What is data pipeline? <br>
+                     It refers to any set of process element that moves the data from one system to another.
+                    </p>
+
+                    <p>11. What is data Purging? <br>
+                     It is a term that is commonly used to describe the method which remove and permenantly erase tha data from a storage space.
+                    </p>
+
+                    <p>12. What is Full Load? <br>
+                     It completely erase the content of one or more tables and reload with fresh data.
+                    </p>
+
+                    <p>13. What is incremental or Refresh load? <br>
+                     In this we apply the on going changes to one or more tables, which is based on a pre-defined schedule.
+                    </p>
+
+                    <p>14. What is Joiner? <br>
+                     It is used to join two or more tables to retrieve the data from tables.
+                    </p>
+
+                    <p>15. What is Lookup? <br>
+                     It is used to check and compare the source table and the target table.
+                    </p>
+
+                    <p>16. What is Staging place in ETL? <br>
+                     It is temporary storage area that is used during the data integration process. In this place, the data is anlayzed carefully for redundancy and duplication.
+                    </p>
+
+                    <p>17. What is Transformation in ETL? <br>
+                     It is defined as archieve object to generate, modify or pass the data. 
+                     It helps in getting values very quickly. <br>
+                     It can update the slowly changing the dimension table. 
+                     It checks or verifies whether the record exists or not inside the table. <br>
+                     i)<u>Mapping: </u> It represents work flow from sources to target. <br>
+                     ii)<u>Work Flow: </u> It is a set of instructions which tells the informetica server how to execute the tasks. <br>
+                     iii)<u>Mapplet: </u> It configures or creates or set of transformation <br>
+                     iv)<u>Worklet: </u> It is an object that represents a set of tasks. <br>
+                     v)<u>Session: </u> It is a set of instructions that describe how and when to move the data from sources to target.
+                    </p>
+
+                    <p>18. What is data extraction? <br>
+                     It is nothing but it is extracting the data from multiple different sources using ETL. In this there are two types <br>
+                     i)<u>Full Extraction: </u> All extarcted data from an operational system or source system load to the staging area. <br>
+                     ii)<u>Partial Extraction: </u> Sometimes, we get the notification from the source system to update the specific data and it is called delta load.
+                    </p>
+
+                    <p>19. What is source system perfomance? <br>
+                     The extraction strategies of data should not effect the perfomance of the source system.
+                    </p>
+
+                    <p>20. What is datawarehouse characteristics? <br>
+                     It is a database which is different from the operational database and stores the hostorical data.
+                     In this database contains analytical as well as transactional data. <br>
+                     It helps the bussiness user to the current trend to run the bussiness.
+                     It is used for data anlaytics and reporting purpose.
+                    </p>
+
+                    <p>21. What is Operatinal data source(ODS)? <br>
+                     It works between the staging area and the data warehouse. 
+                     The data in ODS will be at the level of the granularity. <br>
+                     Where teh data is inserted in ODS, all teh data will be loaded in the Enterprise data warehouse(EDW) through ODS.
+                    </p>
+
+                    <p>22. What is Enterprise data warehouse? <br> 
+                     It is a relational datawarehouse contaning a company's bussiness data, including informatin about it's customer. It enables data analytics, which can inform actionable insights.
+                    </p>
+
+                    <p>23. What is ETL Bugs? <br>
+                     The bugs that are realted to the GUI the application such as colors, alignment, spelling mistakes, navigation etc, it involves valid and invalid types in this correct values are accepted the rest are rejecated. 
+                    </p>
+
+	 </div>
+
+
+</body>
+</html>
